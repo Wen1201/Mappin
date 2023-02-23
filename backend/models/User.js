@@ -19,4 +19,8 @@ const UserSchema = new mongoose.Schema({
         required,
         min: 6,
     },
-});
+},
+{ timestamps: true }
+);
+
+module.exports = moogoose.model("User", UserSchema)
